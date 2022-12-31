@@ -8,7 +8,7 @@ const express = require("express");
 const app = express();
 const port = 7000;
 
-
+app.use(express.static(__dirname + "/docs"))
 app.use(express.static("public"))
 app.use("/images", express.static(__dirname + "public/images"))
 app.use("/css", express.static(__dirname + "public/css"))
