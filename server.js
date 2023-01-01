@@ -18,7 +18,7 @@ app.set("views", "./docs")
 app.set("view engine", "ejs")
 
 app.get("", (req, res) => {
-    res.render("index")
+    res.render("index.ejs")
 })
 app.get("", (req, res) => {
     res.sendFile(__dirname + "/public/css/styles.css")
